@@ -11,7 +11,7 @@ If you don't have a Nova app already head over the [nova installation instructio
 To use your customized package in a Nova app, add this line in the `require` section of the `composer.json` file:
  
  ```
-    "stack/nova-tool": "*",
+    "codebase/nova-tool": "*",
 ```
  
  In the same `composer.json` file add a `repositiories` section with the path to your package repo:
@@ -44,7 +44,7 @@ Add a screenshot of the tool here.
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require stack/nova-tool
+composer require codebase/nova-tool
 ```
 
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
@@ -58,7 +58,7 @@ public function tools()
 {
     return [
         // ...
-        new \Stack\Nova\Tool(),
+        new \Stack\Nova\Tools\Tool(),
     ];
 }
 ```
