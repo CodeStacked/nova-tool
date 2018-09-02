@@ -1,12 +1,12 @@
 <?php
 
-namespace Stack\NovaTool;
+namespace Stack\Nova;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Stack\NovaTool\Http\Middleware\Authorize;
+use Stack\Nova\Http\Middleware\Authorize;
 
 class ToolServiceProvider extends ServiceProvider
 {
@@ -40,7 +40,7 @@ class ToolServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova', Authorize::class])
-                ->prefix('nova-vendor/stack/nova-tool')
+                ->prefix('stack/nova-tool')
                 ->group(__DIR__.'/../routes/api.php');
     }
 

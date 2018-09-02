@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('endpoint', \Stack\NovaTool\Http\Controllers\ToolController::class . '@index');
+Route::get('endpoint', \Stack\Nova\Http\Controllers\ToolController::class . '@index');

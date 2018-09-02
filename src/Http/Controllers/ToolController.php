@@ -1,9 +1,8 @@
 <?php
 
-namespace Stack\NovaTool\Http\Controllers;
+namespace Stack\Nova\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Stack\NovaTool\File;
 use Illuminate\Routing\Controller;
 
 class ToolController extends Controller

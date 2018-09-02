@@ -30,18 +30,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Stack\\NovaTool\\": "src/"
+            "Stack\\Nova\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Stack\\NovaTool\\Tests\\": "tests"
+            "Stack\\Nova\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Stack\\NovaTool\\ToolServiceProvider"
+                "Stack\\Nova\\ToolServiceProvider"
             ]
         }
     },

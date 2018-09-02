@@ -1,10 +1,10 @@
 <?php
 
-namespace Stack\NovaTool\Http\Middleware;
+namespace Stack\Nova\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Stack\NovaTool\Tool;
+use Stack\Nova\Tools\Tool;
 use Symfony\Component\HttpFoundation\Response;
 
 class Authorize
